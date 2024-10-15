@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevLinks</title>
+    <!-- "./ para selecionar um arquivo local" -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Só pode ter uma caixa "id="container" na página. O 'id' é como se fosse a identidade do elemento-->
+    <div id="container">
+      <!-- atalho pra criar uma caixa "# + nome da caixa" -->
+      <!-- Profile = perfil -->
+      <div id="profile">
+
+        <img src="./assets/avatar.png" alt="Foto de Mariane Santos Sorrindo" />
+        <p>@marisantos</p>
+      </div>
+
+      <!-- onclick="toggleMode() tem a função de deixar o botão clicável -->
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+      <!-- <ul><ul> é pra criar lista desordenada e <li><li> é uma lista não ordenada. quando coloca '#' no a href quer dizer que o link é clicável mas não leva a lugar nenhum -->
+      <ul>
+        <li>
+          <a href="https://instagram.com/anne.s_santos" target="_blank"> Ver meu instagran </a>
+        </li>
+        <li>
+          <a href="#">Baixar meu e-book</a>
+        </li>
+        <li>
+          <!-- quando coloco o 'target="_blank"' é possível clicar no link e abrir em uma nova aba e não sobrepor a atual -->
+          <a href="https://github.com/Mariane-Santos" target="_blank"
+            >Ver meu portifólio</a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/marianesantos-dev" target="_blank"
+            >Ver meu linkedin</a>
+        </li>
+      </ul>
+
+      <div id="social-links">
+        <a href="https://github.com/Mariane-Santos" target="_blank">
+          <ion-icon name = "logo-github"> </ion-icon>
+        </a>
+
+         <a href="https://instagram.com/anne.s_santos" target="_blank">
+          <ion-icon name = "logo-instagram"> </ion-icon>
+        </a>
+
+        <a href="https://github.com/Mariane-Santos" target="_blank">
+          <ion-icon name = "logo-youtube"> </ion-icon>
+        </a>
+
+        <a href="https://linkedin.com/in/marianesantos-dev" target="_blank">
+          <ion-icon name = "logo-linkedin"> </ion-icon>
+        </a>
+      </div>
+
+      <footer>
+        Feito com ♥ por <a href="https://instagram.com/anne.s_santos" target="_blank"> Mariane! </a> 
+      </footer>
+    </div>
+
+    <script 
+    type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"> </script>
+    <script 
+    nomodule  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"> </script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+<!-- Esse pedaço de código não ta funcionando aula:"Adicionando Icones" -->
